@@ -1,0 +1,28 @@
+.main-nav {
+  &__list {
+    display: flex;
+    align-items: center;
+    grid-gap: 0 clamp(15px, 1.963vw, 40px);
+  }
+
+  &__link {
+    color: rgba(var(--bg-b),1.0);;
+    font-family: var(--font-family);;
+    font-size: 14px;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    transition: all .2s;
+
+    &:hover {
+      color: rgba(var(--color-c),1.0);
+    }
+
+    &.active {
+      color: rgba(var(--color-c),1.0);
+    }
+  }
+
+
+}

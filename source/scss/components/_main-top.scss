@@ -1,0 +1,15 @@
+.main-top {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 20px;
+  text-align: center;
+
+  @include mobile {
+    grid-gap: 10px;
+  }
+
+  p {
+    font-size: clamp(16px, 1.481vw, 20px);
+    font-weight: 400;
+  }
+}

@@ -1,0 +1,229 @@
+.main-link {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  grid-gap: 10px;
+  transition: all .2s;
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: -0.005em;
+  color: rgba(var(--color-c),1.0);
+
+  span {
+    position: relative;
+
+    &::before {
+      transition: opacity .2s;
+      left: 0;
+      right: 0;
+      height: 2px;
+      position: absolute;
+      content: "";
+      opacity: 0;
+      background-color: currentColor;
+      bottom: -2px;
+    }
+  }
+
+  svg {
+    fill: rgba(var(--color-d),1.0);
+  }
+
+  &:hover {
+    color: rgba(var(--color-h),1.0);
+
+    svg {
+      fill: rgba(var(--color-h),1.0);
+    }
+
+    span:before {
+      opacity: 1;
+    }
+  }
+
+  &:active {
+    color: rgba(var(--bg-i),1.0);
+
+    svg {
+      fill: rgba(var(--bg-i),1.0);
+    }
+
+    span:before {
+      opacity: 1;
+    }
+  }
+
+  &:disabled {
+    color: rgba(var(--color-j),1.0);
+    svg {
+      fill: currentColor;
+    }
+
+    span:before {
+      opacity: 0;
+    }
+  }
+}
+
+.main-button {
+  padding: 8px 20px;
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  background: rgba(var(--bg-d),1.0);
+  border-radius: 8px;
+  border: 2px solid var(--br-a);
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 100%;
+  color: rgba(var(--color-a),1.0);
+
+  &:hover {
+    background: rgba(var(--color-h),1.0);
+    border-color: var(--br-b);
+  }
+
+  &:active {
+    background: rgba(var(--color-i),1.0);
+    border-color: var(--br-c);
+  }
+
+  &:disabled {
+    background: rgba(var(--color-g),1.0);
+    border-color: var(--br-d);
+    color: rgba(var(--color-j),1.0);
+  }
+
+  &--transparent {
+    background-color: transparent;
+    color: rgba(var(--color-c),1.0);
+
+    &:hover {
+      background: transparent;
+      border-color: var(--br-b);
+    }
+
+    &:active {
+      background: transparent;
+      border-color: var(--br-c);
+    }
+
+    &:disabled {
+      background: transparent;
+      border-color: var(--br-d);
+      color: rgba(var(--color-j),1.0);
+    }
+  }
+}
+
+// 48px
+.main-title {
+  font-family: var(--font-family);
+  font-size: clamp(30px, 3.84vw, 48px);
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  color: rgba(var(--color-d),1.0);
+}
+
+// 44px
+.main-subtitle {
+  color: rgba(var(--color-d),1.0);
+  font-family: rgba(var(--color-d),1.0);
+  font-size: clamp(25px, 3.52vw, 44px);
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+}
+
+// 30px
+.main-pretitle {
+  color: rgba(var(--color-d),1.0);
+  font-family: rgba(var(--color-d),1.0);
+  font-size: clamp(20px, 2.222vw, 30px);
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+}
+
+.accent-title {
+  font-family: var(--font-family);
+  font-size: clamp(16px, 1.6vw, 20px);
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  color: rgba(var(--color-d),1.0);
+}
+
+p {
+  color: rgba(var(--color-b),1.0);
+  font-family: var(--font-family);
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+}
+
+.logo-text {
+  color: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+  line-height: inherit;
+  display: inline-flex;
+  align-items: baseline;
+
+  i {
+    display: inline-block;
+    width: clamp(21px,2.963vw, 40px);
+    height: clamp(21px,2.963vw, 40px);
+    background-image:var(--custom-letter);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.green-wrapper {
+  color: rgba(var(--color-c),1.0);
+  font-size: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+  line-height: inherit;
+}
+
+.arrow-button {
+  transition: color .2s ease-in;
+  color: rgba(var(--color-f),1.0);
+
+  svg {
+    width: 100%;
+    max-width: 48px;
+    height: auto;
+    fill: currentColor;
+  }
+
+  &:hover {
+    color: rgba(var(--color-c),1.0);
+  }
+
+  &:active {
+    transform: scale(.8);
+  }
+
+  &:disabled,
+  &.swiper-button-disabled {
+    color: rgba(var(--color-b),.2);
+    pointer-events: none;
+  }
+}

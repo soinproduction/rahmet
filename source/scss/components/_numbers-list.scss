@@ -1,0 +1,28 @@
+.numbers-list {
+  counter-reset: li;
+  display: flex;
+  flex-direction: column;
+  grid-gap: clamp(20px, 2.222vw, 25px);
+
+  &__item {
+    counter-increment: li;
+  }
+
+  p {
+    font-size: clamp(16px, 1.333vw, 18px);
+    position: relative;
+
+    &::before {
+      content: counter(li)'.';
+      font-size: inherit;
+      color: inherit;
+      font-weight: inherit;
+      font-size: inherit;
+      display: inline-block;
+      padding-right: 5px;
+      text-align: right;
+    }
+  }
+
+
+}

@@ -1,0 +1,31 @@
+<header class="header">
+  <div class="container">
+    <div class="header-box">
+        @include('../partials/components/header-logo.html',{
+          'ClassName':'header__logo',
+          'Link':'index.html',
+          'IconName':'header-logo',
+          'IconWidth':'226',
+          'IconHeight':'39'
+        })
+
+
+        <div class="header-box__inner">
+          @include('../partials/components/main-nav.html',
+          {'classMode':'header-box__nav'})
+
+          @include('./components/main-phone.html',{
+            'phoneHref':'tel:+71234567890',
+            'phoneInner':'+7 (123) 456-78-90',
+            'classMode':'header-box__phone'
+          })
+        </div>
+
+
+        @include('../partials/components/burger.html',{'classMode':''})
+
+
+
+    </div>
+  </div>
+</header>

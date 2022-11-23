@@ -1,0 +1,127 @@
+.functional-section {
+  padding-top: clamp(30px, 5.556vw, 75px);
+  background-color: rgba(var(--bg-e),1.0);
+
+  .swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .services-box {
+    @include mobile {
+      width: fit-content;
+      margin: 0 auto;
+    }
+  }
+
+  &__wrapper {
+    background-color: rgba(var(--bg-e),1.0);
+
+    &:nth-child(even) {
+
+      background-color: rgba(var(--bg-a),1.0);
+      position: relative;
+      overflow: hidden;
+
+
+      .functional-section__slider {
+        margin-bottom: calc(min(7.407vw, 50px) * -1);
+
+        @include small-tablet {
+          margin: 0;
+        }
+      }
+
+      .services-box {
+        order: -1;
+
+        @include mobile {
+          order: initial;
+        }
+      }
+
+      &::before {
+        background-image: var(--slider-bg);
+        top: 0;
+        bottom: 0;
+        right: 0;
+        width: 52vw;
+        position: absolute;
+        content: "";
+        background-size: cover;
+
+        @include mobile {
+          width: 70vw;
+        }
+      }
+
+      .functional-section__inner {
+        padding-top: 70px;
+
+        @include tablet {
+          grid-template-columns: 1fr 45%;
+        }
+
+        @include small-tablet {
+          padding: 20px 0;
+          justify-items: initial;
+          grid-template-columns: 1fr 35%;
+        }
+
+        @include mobile {
+          grid-template-columns: 100%;
+          justify-items: center;
+          grid-gap: 20px;
+        }
+      }
+    }
+  }
+
+  &__inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    justify-content: center;
+    grid-gap: Min(5.926vw, 80px);
+    align-items: center;
+    padding-top: 30px;
+
+    @include tablet {
+      grid-template-columns: 45% 1fr;
+    }
+
+    @include small-tablet {
+      padding: 30px 0;
+      justify-items: initial;
+      grid-template-columns: 35% 1fr;
+    }
+
+    @include mobile {
+      justify-items: center;
+      grid-template-columns: 100%;
+    }
+  }
+
+  &__slider {
+    margin-bottom: calc((Min(7.407vw, 70px) * -1));
+
+    @include small-tablet {
+      margin: 0;
+    }
+  }
+
+  &__slider {
+    max-width: 510px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    @include mobile {
+      max-width: 70%;
+      justify-content: center;
+    }
+  }
+}

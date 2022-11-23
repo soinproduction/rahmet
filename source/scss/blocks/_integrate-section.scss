@@ -1,0 +1,17 @@
+.integrate-section {
+
+  &__box {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  &__block {
+
+    &-title {
+      color:rgba(var(--color-d),1.0);
+      text-align: center;
+      font-weight: 400;
+    }
+  }
+}

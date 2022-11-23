@@ -1,0 +1,10 @@
+.services-box {
+  display: flex;
+  flex-direction: column;
+  grid-gap: clamp(30px, 4.444vw, 50px);
+
+  &__title {
+    display: flex;
+    flex-direction: column;
+  }
+}

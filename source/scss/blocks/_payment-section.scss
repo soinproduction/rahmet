@@ -1,0 +1,10 @@
+.payment-section {
+  padding: clamp(30px, 4.889vw, 66px) 0 clamp(30px, 5.926vw, 80px);
+  background-color: rgba(var(--bg-e),1.0);
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    grid-gap: clamp(30px, 4.444vw, 60px);
+  }
+}

@@ -1,0 +1,47 @@
+@mixin overlay {
+  position: fixed;
+  height: calc(100% - var(--header-height));
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 9;
+
+  height: -webkit-fill-available;
+  padding: 20px 20px;
+  overflow-y: scroll;
+
+  background: rgba(0, 0, 0, 0.2);
+  visibility: hidden;
+  opacity: 0;
+
+  transition: all 1s;
+  transition-delay: 0.5s;
+
+  pointer-events: none;
+
+  // @media (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+  //   background: none;
+  //   background-color: rgba(0, 0, 0, 0.2);
+  // }
+
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  &.active {
+    z-index: 9;
+
+    display: grid;
+    justify-content: center;
+    align-items: center;
+
+
+    visibility: visible;
+    opacity: 1;
+
+    transition: all 0.6s;
+
+    pointer-events: initial;
+  }
+}

@@ -1,0 +1,14 @@
+.main-phone {
+  color: rgba(var(--color-b),1.0);
+  font-family: var(--font-family);
+  font-size: 18px;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  transition: all .4s;
+
+  &:hover {
+    color: rgba(var(--bg-c),1.0);
+  }
+}

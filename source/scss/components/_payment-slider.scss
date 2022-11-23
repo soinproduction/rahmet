@@ -1,0 +1,32 @@
+.payment-slider {
+
+  .swiper-container {
+    @include tablet {
+      margin: 0 -15px;
+      width: calc(100% + 30px);
+    }
+  }
+
+  .swiper-wrapper {
+    @include for-tablet {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      justify-items: center;
+    }
+
+    transition-timing-function: linear !important;
+  }
+
+  .swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include tablet {
+      width: fit-content;
+      height: initial;
+    }
+  }
+
+
+}
