@@ -1,4 +1,10 @@
 .integrate-section {
+  padding-top: clamp(30px, 7.778vw, 105px);
+  padding-bottom: clamp(30px, 8.889vw, 120px);
+
+  &__top {
+    margin-bottom: clamp(40px, 5.185vw, 70px);
+  }
 
   &__box {
     max-width: 1140px;
@@ -7,11 +13,18 @@
   }
 
   &__block {
+    display: flex;
+    flex-direction: column;
+    grid-gap: clamp(35px, 3.704vw, 50px);
 
     &-title {
       color:rgba(var(--color-d),1.0);
       text-align: center;
       font-weight: 400;
+    }
+
+    & + & {
+      margin-top: clamp(60px, 8.889vw, 120px);
     }
   }
 }

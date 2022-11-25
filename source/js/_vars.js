@@ -7,7 +7,7 @@ export default {
   overlay: document.querySelector('[data-overlay]'),
   // accParrent: [...document.querySelectorAll("[accordion-init]")],
   // selectParrent: [...document.querySelectorAll("[data-select]")],
-  // tabsParrents: [...document.querySelectorAll("[data-tabs-parrent]")],
+  tabsParrents: [...document.querySelectorAll("[data-tabs-parrent]")],
   // modals: [...document.querySelectorAll('[data-popup]')],
   // modalsButton: [...document.querySelectorAll("[data-btn-modal]")],
   // innerButtonModal: [...document.querySelectorAll("[data-btn-inner]")],

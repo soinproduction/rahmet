@@ -203,6 +203,7 @@ p {
 }
 
 .arrow-button {
+  flex-shrink: 0;
   transition: color .2s ease-in;
   color: rgba(var(--color-f),1.0);
 

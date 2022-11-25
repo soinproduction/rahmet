@@ -7,7 +7,7 @@ import './components/sliders';
 import './components/initMobileSlider';
 // import './components/burger';
 // import './components/modals';
-// import './components/tabs';
+import './components/tabs';
 // import './components/anchor';
 
 

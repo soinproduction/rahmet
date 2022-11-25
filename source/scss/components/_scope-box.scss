@@ -1,0 +1,71 @@
+.scope-box {
+  position: relative;
+
+  &__list {
+    list-style: disc;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px clamp(30px, 7.333vw, 99px);
+
+    @include tablet {
+      grid-gap: 20px;
+    }
+
+    @include small-tablet {
+      grid-template-columns: 100%;
+    }
+  }
+
+  &__image {
+    position: absolute;
+    display: flex;
+    bottom: -10px;
+    right: -10px;
+    width: Min(18.519vw, 250px);
+    height: auto;
+
+    @include tablet {
+      opacity: .1;
+      width: initial;
+    }
+  }
+
+  &__item {
+    list-style: disc;
+    position: relative;
+    display: flex;
+    grid-gap: clamp(20px, 2.222vw, 30px);
+    flex-direction: column;
+    padding-left: clamp(15px, 2.37vw, 32px);
+
+    &:before {
+      width: 8px;
+      height: 8px;
+      display: block;
+      background-color: rgba(var(--bg-c),1.0);
+      content: '';
+      position: absolute;
+      left: 0;
+      border-radius: 50%;
+      transform: translateY(50%);
+    }
+  }
+
+  &__title {
+    display: flex;
+    grid-gap: 5px 13px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  p {
+    color: #000000;
+    font-family: Stolzl;
+    font-size: 15px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-align: left;
+  }
+}

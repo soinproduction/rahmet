@@ -1,0 +1,75 @@
+.operation-info {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 30px;
+  padding: 34px;
+  border-radius: 15px;
+  background-color: rgba(var(--bg-e),1.0);
+  position:relative;
+  z-index: 10;
+
+  @include small-tablet {
+    width: 100%;
+  }
+
+  @include mobile {
+    padding: 30px 15px;
+  }
+
+  &__title {
+    color: rgba(var(--color-c),1.0);
+  }
+
+  &__tabs {
+    display: flex;
+    flex-direction: column;
+    grid-gap: clamp(30px, 2.448vw, 47px);
+  }
+
+  &__nav {
+    overflow-x: auto;
+    overflow-y: hidden;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    grid-gap: clamp(30px, 4.167vw, 60px);
+    padding-bottom: 17px;
+    border-bottom: 2px solid var(--br-b);
+  }
+
+  &__btn {
+    color: rgba(var(--color-j),1.0);
+    font-family: var(--font-family);
+    font-size: clamp(18px, 1.63vw, 22px);
+    font-weight: 500;
+    font-style: normal;
+    line-height: normal;
+    transition: all .4s;
+    padding: 0 10px;
+    position: relative;
+    margin-bottom: 1px;
+
+    &.active,
+    &:hover {
+      color: rgba(var(--color-c),1.0);
+    }
+
+    &.active::before {
+      opacity: 1;
+    }
+
+    &::before {
+      position: absolute;
+      left: 0;
+      right: 0;
+      height: 2px;
+      display: flex;
+      content: '';
+      bottom: -19px;
+      background-color: currentColor;
+      opacity: 0;
+    }
+  }
+
+
+}

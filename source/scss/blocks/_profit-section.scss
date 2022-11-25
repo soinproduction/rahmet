@@ -1,0 +1,14 @@
+.profit-section {
+  padding: clamp(30px, 6.444vw, 87px) 0 clamp(30px, 4.963vw, 67px);
+  background-color: rgba(var(--bg-e),1.0);
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    grid-gap: clamp(40px, 7.037vw, 95px);
+  }
+
+  &__top {
+    grid-gap: clamp(50px, 7.556vw, 102px);
+  }
+}
