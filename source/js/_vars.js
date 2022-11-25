@@ -1,4 +1,5 @@
 export default {
+  activeMode: 'active-mode',
   activeClass: "active",
   windowEl: window,
   documentEl: document,
@@ -8,19 +9,24 @@ export default {
   // accParrent: [...document.querySelectorAll("[accordion-init]")],
   // selectParrent: [...document.querySelectorAll("[data-select]")],
   tabsParrents: [...document.querySelectorAll("[data-tabs-parrent]")],
-  // modals: [...document.querySelectorAll('[data-popup]')],
-  // modalsButton: [...document.querySelectorAll("[data-btn-modal]")],
+  modals: [...document.querySelectorAll('[data-popup]')],
+  modalsButton: [...document.querySelectorAll("[data-btn-modal]")],
   // innerButtonModal: [...document.querySelectorAll("[data-btn-inner]")],
   // customSelect: [...document.querySelectorAll("[data-select]")],
-  // burger: document.querySelector('.burger'),
-  // mobileMenu: document.querySelector('.header-top'),
+  burger: document.querySelector('.burger'),
+  mobileMenu: document.querySelector('.header-box__nav'),
+
+
   header: document.querySelector(".header"),
-  // headerTop: document.querySelector(".header-top"),
-  // headerBottom: document.querySelector(".header-bottom"),
-  // items: [...document.querySelectorAll('.mobile-nav__item')],
   // default variables
   defaultSliders: [...document.querySelectorAll('.default-sider')],
   logoSlider: [...document.querySelectorAll('.payment-slider .swiper-container')],
+  mainLinks: [...document.querySelectorAll('.main-nav__link')],
+  observSections: [...document.querySelectorAll('.section-observe')],
+  // obse: [...document.querySelectorAll('.section-observe')],
+
+
+
 
 }
 

@@ -12,7 +12,7 @@
   }
 
   &__logo {
-    width: Min(14.741vw,226px);
+    width: clamp(150px,14.741vw,226px);
 
     svg {
       width: 100%;
@@ -28,12 +28,27 @@
   grid-gap: clamp(10px, 1.6vw, 20px);
   padding: 20px 0;
 
+  @include tablet {
+    grid-gap: 30px;
+  }
+
+  @include mobile {
+    grid-gap: 15px;
+    // display: grid;
+    // grid-template-columns: auto auto auto;
+  }
+
   &__inner {
     flex-grow: 1;
     display: flex;
     align-items: center;
     justify-content: space-between;
     grid-gap: clamp(10px, 1.6vw, 20px);
+
+    // @include mobile {
+    //   flex-grow: 0;
+    //   width: fit-content;
+    // }
   }
 
   &__nav {
@@ -42,8 +57,44 @@
 
   &__phone {
     font-size: clamp(14px, 1.57vw, 18px);
+
+    @include tablet {
+      margin-left: auto;
+      white-space: nowrap;
+    }
   }
 }
 
+
+@include tablet {
+  .header-box__nav {
+    position: fixed;
+    left: 0;
+    top: var(--header-height);
+    max-width: 200px;
+    width: 100%;
+    height: calc(100% - var(--header-height));
+    background-color:rgba(var(--bg-a),1.0);
+    z-index: 50;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    overflow-y: auto;
+    transition: transform .2s linear;
+    transform: translateX(-120%);
+    left: 0;
+
+    &.active {
+      transform: translateX(0);
+    }
+
+    .main-nav__list {
+      display: flex;
+      flex-direction: column;
+      grid-gap: clamp(20px, 5vh, 40px);
+    }
+  }
+}
 
 

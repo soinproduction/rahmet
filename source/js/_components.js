@@ -5,10 +5,11 @@ import './components/stickyHeader';
 import './components/sliders';
 // import './components/accordions';
 import './components/initMobileSlider';
-// import './components/burger';
-// import './components/modals';
+import './components/burger';
+import './components/modals';
 import './components/tabs';
 // import './components/anchor';
+import './components/observer';
 
 
 

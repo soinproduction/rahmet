@@ -1,0 +1,6 @@
+.burger {
+  @include tablet {
+    @include burger;
+    display: flex;
+  }
+}

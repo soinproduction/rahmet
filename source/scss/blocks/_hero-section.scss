@@ -3,6 +3,10 @@
   background-color: rgba(var(--bg-a),1.0);
   position: relative;
 
+  @include for-laptop {
+    min-height: 100vh;
+  }
+
   @include mobile {
     padding: 30px 0px;
   }

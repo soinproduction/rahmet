@@ -1,0 +1,51 @@
+.modal-box {
+
+}
+
+.modal {
+  max-width: 555px;
+  width: 100%;
+  text-align: center;
+  padding: clamp(20px, 4.222vw, 57px);
+  border-radius: 10px;
+  background-color: rgba(var(--bg-a),1.0);
+
+  svg {
+    fill: rgba(var(--color-c),1.0);
+  }
+
+  &__close {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+  }
+
+  @include mobile {
+    padding: 30px 20px;
+  }
+}
+
+.modal-box {
+  display: flex;
+  flex-direction: column;
+  grid-gap: clamp(30px, 4.815vw, 65px);
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    grid-gap: clamp(15px, 2.444vw, 33px);
+
+    p {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 150%;
+      font-family: var(--font-family2)
+    }
+  }
+
+  &__title {
+    font-size: 16px;
+    font-weight: 600;
+    color: rgba(var(--color-b),1.0);
+  }
+}

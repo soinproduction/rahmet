@@ -11,20 +11,17 @@
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
 
 // --------------- default JS variable ---------------
-  --header-height: 85px;
-  --header-top-height: 56px;
-  --header-bottom-height: 102px;
-
+  --header-height: 77px;
 // --------------- default JS tablet variable ---------------
   @media (max-width: 1024px) {
-    // --header-height:135px;
+    --header-height: 66px;
     // --header-top-height:708px;
     // --header-bottom-height:135px;
   }
 
 // --------------- default JS small-tablet variable ---------------
   @media (max-width: 767px) {
-    // --header-height:87px;
+    --header-height:87px;
     // --header-top-height:756px;
     // --header-bottom-height:87px;
   }
@@ -50,6 +47,7 @@
 
 // --------------- default font-family variable ---------------
   --font-family: "Stolzl" , sans-serif; // var(--font-family);
+  --font-family2: "Stolzl-b" , sans-serif; // var(--font-family2);
 
 
 // --------------- default text color variable ---------------

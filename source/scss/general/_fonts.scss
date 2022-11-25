@@ -10,8 +10,8 @@
   }
 }
 @include font-face("Stolzl", "stolzl_thin", 100, normal);
-@include font-face("Stolzl", "stolzl_lite", 300, normal);
-@include font-face("Stolzl", "stolzl_book", 200, normal);
+@include font-face("Stolzl", "stolzl_light", 300, normal);
+@include font-face("Stolzl-b", "stolzl_book", 200, normal);
 @include font-face("Stolzl", "stolzl_regular", 400, normal);
 @include font-face("Stolzl", "stolzl_medium", 500, normal);
 @include font-face("Stolzl", "stolzl_bold", 700, normal);
