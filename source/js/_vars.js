@@ -23,6 +23,8 @@ export default {
   logoSlider: [...document.querySelectorAll('.payment-slider .swiper-container')],
   mainLinks: [...document.querySelectorAll('.main-nav__link')],
   observSections: [...document.querySelectorAll('.section-observe')],
+  formsSecond: '.contacts-section__form',
+  formsFirst: '.contact-section__form',
   // obse: [...document.querySelectorAll('.section-observe')],
 
 

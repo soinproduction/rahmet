@@ -10,6 +10,8 @@ import './components/modals';
 import './components/tabs';
 // import './components/anchor';
 import './components/observer';
+import './components/validate';
+import './components/inputMask';
 
 
 

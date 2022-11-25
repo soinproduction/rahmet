@@ -330,3 +330,15 @@ fieldset {
     pointer-events: none;
   }
 }
+
+.just-validate-error-label {
+  position: absolute;
+  font-family: var(--font-family);
+  font-size: 10px;
+  padding-left: clamp(15px, 2.222vw, 30px);
+  bottom: 5px;
+
+  @include small-tablet {
+    bottom: 1px;
+  }
+}

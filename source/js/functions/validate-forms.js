@@ -15,23 +15,23 @@ export const validateForms = (selector, rules, afterSend) => {
     return false;
   }
 
-  if (telSelector) {
-    const inputMask = new Inputmask('+38 (000) 000-00-00');
-    inputMask.mask(telSelector);
+  // if (telSelector) {
+  //   const inputMask = new Inputmask('+7 (___)___-__-__');
+  //   inputMask.mask(telSelector);
 
-    for (let item of rules) {
-      if (item.tel) {
-        item.rules.push({
-          rule: 'function',
-          validator: function() {
-            const phone = telSelector.inputmask.unmaskedvalue();
-            return phone.length === 10;
-          },
-          errorMessage: item.telError
-        });
-      }
-    }
-  }
+  //   for (let item of rules) {
+  //     if (item.tel) {
+  //       item.rules.push({
+  //         rule: 'function',
+  //         validator: function() {
+  //           const phone = telSelector.inputmask.unmaskedvalue();
+  //           return phone.length === 10;
+  //         },
+  //         errorMessage: item.telError
+  //       });
+  //     }
+  //   }
+  // }
 
   const validation = new JustValidate(selector);
 
