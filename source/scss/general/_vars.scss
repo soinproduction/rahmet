@@ -4,7 +4,7 @@
 }
 :root {
 // --------------- default global variable ---------------
-  --body-bg: #F3F3F3;
+  --body-bg: #ffffff;
   --body-font-size: 16px;
   --content-width: 1250px;
   --container-offset: 15px;
@@ -34,10 +34,10 @@
   // }
 
 // --------------- default scroll variable ---------------
-  --scrollbar-thumb: #FDFDFD;
-  --scrollbar-thumb-hover: #FDFDFD;
-  --scrollbar-track:  #757978;
-  --scrollbar-track-hover: #757978;
+  --scrollbar-thumb: #00d655;
+  --scrollbar-thumb-hover: #00d655;
+  --scrollbar-track:  #ffffff;
+  --scrollbar-track-hover: #ffffff;
   --overlay-bg: rgba(0, 0, 0, 0.5);
 
 // --------------- default slect variable ---------------
@@ -51,7 +51,7 @@
 
 
 // --------------- default text color variable ---------------
-  --burger-color: #{HexToRGB(#000000)};
+  --burger-color: #{HexToRGB(#00d655)};
 
   --color-a: #{HexToRGB(#ffffff)}; // rgba(var(--color-a),1.0);
   --color-b: #{HexToRGB(#000000)}; // rgba(var(--color-b),1.0);

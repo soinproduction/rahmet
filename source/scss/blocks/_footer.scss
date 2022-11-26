@@ -22,10 +22,15 @@ footer {
       font-size: 12px;
       font-weight: 400;
       font-style: normal;
+      transition: color .4s;
     }
 
     a.footer__link {
       text-decoration: underline;
+
+      &:hover {
+        color: rgba(var(--color-c),1.0);
+      }
     }
 
   }

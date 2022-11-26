@@ -4,10 +4,10 @@
       <span class="footer__link">
         © 2022 Все права защищены.
       </span>
-      <a href="#" class="footer__link">
+      <a href="#" class="footer__link" data-btn-modal="2">
         Договор оферты
       </a>
-      <a href="#" class="footer__link">
+      <a href="#" class="footer__link" data-btn-modal="1">
         Политика конфиденциальности
       </a>
     </div>
@@ -15,7 +15,6 @@
 </footer>
 
 <div class="overlay" data-overlay>
-
 
     <div class="modal" data-popup="1">
         <div class="modal__box" role="dialog" aria-modal="true">
@@ -91,6 +90,49 @@
             </p>
           </li>
         </ul>
+    </div>
+    <div class="modal" data-popup="2">
+      <div class="modal__box" role="dialog" aria-modal="true">
+        <button class="close modal__close" aria-label="Закрыть модальное окно">
+          <svg width='15' height='15'>
+            <use href='img/sprite/sprite.svg#close'></use>
+          </svg>
+        </button>
+      </div>
+      <ul class="modal-box">
+        <li class="modal-box__item">
+          <span class="modal-box__title">
+            Договор оферты
+          </span>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum obcaecati minus at totam incidunt ea, nesciunt quisquam sequi cupiditate voluptatum nulla deleniti, illum corporis maxime eaque nam eveniet reprehenderit nostrum.
+            Unde hic atque alias aliquam tempora quia voluptatum eius exercitationem facere nostrum magni vero nam amet aperiam nihil, fugiat dolor minima! Delectus odio incidunt et vel fugit, at qui omnis!
+            Amet labore earum eius blanditiis perspiciatis fugiat, dolores suscipit, cupiditate sequi iusto tempore ea reprehenderit ex nulla dolore facilis soluta, voluptatum expedita quaerat deleniti natus. Maxime repellat eveniet quod vel.
+            Ullam porro impedit dolor blanditiis est, veniam quis quisquam quasi, dolorem perferendis accusamus. Odit modi excepturi reiciendis, repudiandae cumque quas animi quo, quidem ipsam vel distinctio, laboriosam ipsa ut tempora!
+            Libero nobis fugit, repellendus ipsum in, neque voluptatem modi eveniet consequatur vel, eaque et cum magnam! Illo, corrupti? Dolorum dolore quia sunt nobis aspernatur eaque nostrum laboriosam quaerat iste pariatur!
+          </p>
+        </li>
+      </ul>
+  </div>
+    <div class="modal" data-popup="done">
+        <div class="modal__box" role="dialog" aria-modal="true">
+          <button class="close modal__close" aria-label="Закрыть модальное окно">
+            <svg width='15' height='15'>
+              <use href='img/sprite/sprite.svg#close'></use>
+            </svg>
+          </button>
+        </div>
+        <div class="modal-box modal-box--done">
+            <span class="modal-box__icon">
+              <svg width='60' height='40'>
+                <use href='img/sprite/sprite.svg#check'></use>
+              </svg>
+            </span>
+
+            <p class="modal-box__alert">
+              Заявка успешно отправлена!
+            </p>
+        </div>
     </div>
 
 </div>

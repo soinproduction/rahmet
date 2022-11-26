@@ -15,9 +15,8 @@ export default {
   // customSelect: [...document.querySelectorAll("[data-select]")],
   burger: document.querySelector('.burger'),
   mobileMenu: document.querySelector('.header-box__nav'),
-
-
   header: document.querySelector(".header"),
+
   // default variables
   defaultSliders: [...document.querySelectorAll('.default-sider')],
   logoSlider: [...document.querySelectorAll('.payment-slider .swiper-container')],
@@ -25,11 +24,6 @@ export default {
   observSections: [...document.querySelectorAll('.section-observe')],
   formsSecond: '.contacts-section__form',
   formsFirst: '.contact-section__form',
-  // obse: [...document.querySelectorAll('.section-observe')],
-
-
-
-
 }
 
 

@@ -1,7 +1,9 @@
 import { validateForms } from '../functions/validate-forms';
-import vars from '../_vars'
+import vars from '../_vars';
+import {modalClickHandler} from '../components/modals'
+import { removeClassInArray,addCustomClass, removeCustomClass } from "../functions/customFunctions";
 
-const {formsSecond,formsFirst} = vars;
+const {overlay,formsSecond,formsFirst, activeClass, activeMode} = vars;
 
 const rules1 = [
 
@@ -10,12 +12,18 @@ const rules1 = [
     rules: [
       {
         rule: 'minLength',
-        value: 3
+        value: 3,
+        errorMessage: 'Поле должно содержать минимум 3 символа'
       },
       {
         rule: 'required',
         value: true,
         errorMessage: 'Введите вашу почту!'
+      },
+      {
+        rule: 'email',
+        value: true,
+        errorMessage: 'Введите корректную почту!'
       }
     ]
   },
@@ -28,7 +36,7 @@ const rules1 = [
         rule: 'required',
         value: true,
         errorMessage: 'Заполните телефон!'
-      }
+      },
     ]
   },
   {
@@ -36,7 +44,8 @@ const rules1 = [
     rules: [
       {
         rule: 'minLength',
-        value: 3
+        value: 3,
+        errorMessage: 'Поле должно содержать минимум 3 символа'
       },
       {
         rule: 'required',
@@ -52,7 +61,8 @@ const rules2 = [
     rules: [
       {
         rule: 'minLength',
-        value: 3
+        value: 3,
+        errorMessage: 'Поле должно содержать минимум 3 символа'
       },
       {
         rule: 'required',
@@ -66,12 +76,18 @@ const rules2 = [
     rules: [
       {
         rule: 'minLength',
-        value: 3
+        value: 3,
+        errorMessage: 'Поле должно содержать минимум 3 символа'
       },
       {
         rule: 'required',
         value: true,
         errorMessage: 'Введите вашу почту!'
+      },
+      {
+        rule: 'email',
+        value: true,
+        errorMessage: 'Введите корректную почту!'
       }
     ]
   },
@@ -92,22 +108,20 @@ const rules2 = [
     rules: [
       {
         rule: 'minLength',
-        value: 3
+        value: 3,
+        errorMessage: 'Поле должно содержать минимум 3 символа'
       },
       {
         rule: 'required',
         value: true,
-        errorMessage: 'Ваше имя!'
+        errorMessage: 'Заполнте ваше имя!'
       }
     ]
   },
 ];
 
 const afterForm = () => {
-  console.log('Произошла отправка, тут можно писать любые действия');
-
-  // openModal();
-
+  modalClickHandler('done',activeClass);
 };
 
   validateForms(formsFirst, rules1, afterForm);

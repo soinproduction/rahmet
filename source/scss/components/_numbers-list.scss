@@ -11,6 +11,8 @@
   p {
     font-size: clamp(16px, 1.333vw, 18px);
     position: relative;
+    display: flex;
+    grid-gap: 5px;
 
     &::before {
       content: counter(li)'.';

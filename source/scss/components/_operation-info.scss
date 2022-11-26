@@ -34,7 +34,22 @@
     align-items: center;
     grid-gap: clamp(30px, 4.167vw, 60px);
     padding-bottom: 17px;
-    border-bottom: 2px solid var(--br-b);
+    position: relative;
+
+    &::before {
+      left: 0;
+      right: 0;
+      height: 2px;
+      background-color: var(--br-b);
+      position: absolute;
+      bottom: 0;
+      content: '';
+
+      // @include mobile {
+      //   left: 15px;
+      //   right: 15px;
+      // }
+    }
   }
 
   &__btn {
@@ -47,7 +62,6 @@
     transition: all .4s;
     padding: 0 10px;
     position: relative;
-    margin-bottom: 1px;
 
     &.active,
     &:hover {
@@ -65,7 +79,7 @@
       height: 2px;
       display: flex;
       content: '';
-      bottom: -19px;
+      bottom: -17px;
       background-color: currentColor;
       opacity: 0;
     }

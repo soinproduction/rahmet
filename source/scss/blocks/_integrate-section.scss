@@ -1,6 +1,7 @@
 .integrate-section {
   padding-top: clamp(30px, 7.778vw, 105px);
   padding-bottom: clamp(30px, 8.889vw, 120px);
+  background-color: rgba(var(--bg-a),1.0);
 
   &__top {
     margin-bottom: clamp(40px, 5.185vw, 70px);

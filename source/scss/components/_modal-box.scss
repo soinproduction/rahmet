@@ -1,5 +1,26 @@
 .modal-box {
+  &--done {
+    grid-gap: 30px;
+    align-items: center;
 
+    .modal-box__icon {
+      width: 70px;
+      height: 70px;
+      @include dfc;
+      border-radius: 50%;
+      background-color: rgba(var(--bg-c),1.0);
+      color:rgba(var(--color-a),1.0);
+
+      svg {
+        fill:currentColor;
+      }
+
+    }
+
+    .modal-box__alert {
+      font-size: clamp(16px, 1.852vw, 25px);
+    }
+  }
 }
 
 .modal {
@@ -9,6 +30,8 @@
   padding: clamp(20px, 4.222vw, 57px);
   border-radius: 10px;
   background-color: rgba(var(--bg-a),1.0);
+
+
 
   svg {
     fill: rgba(var(--color-c),1.0);
